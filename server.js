@@ -28,3 +28,5 @@ db.mongoose.connect(`mongodb://${config.HOST}:${config.PORT}/${config.DB}`, {
     console.log(err);
     process.exit();
 });
+
+require("./app/routes/student.route")(app);
